@@ -1,0 +1,97 @@
+# CPP Files
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+
+cmake-build*/**/*
+
+# Typescript/node
+
+#Raw data types
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+# Build
+public/css/main.css
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# Ignore node-gyp build files
+build/**/*
+
+# Ignore binary packages files
+bin/**/*
+
+# Ignore test outputs
+test-outputs/**/*
+
+# Ignore configuration files
+config/**/*
+
+# ignore yarn.lock
+yarn.lock
+
+#.VSCodeCounter output
+.VSCodeCounter

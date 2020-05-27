@@ -1,0 +1,47 @@
+{
+    "main": "dist/lib/pulse-it.js",
+    "types": "dist/lib/pulse-it.d.ts",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "dateformat": "^3.0.3"
+    },
+    "scripts": {
+        "post-build": "cp -r build dist",
+        "build-ts": "tsc -p .",
+        "build": "npm run build-ts",
+        "build-release": "npm run clean && npm run build",
+        "test": "mkdir -p test-outputs && jest --verbose --runInBand && rm -rf test-outputs",
+        "test-quiet": "mkdir -p test-outputs && jest --verbose --silent && rm -rf test-outputs",
+        "coverage": "mkdir -p test-outputs && jest --coverage && rm -rf test-outputs",
+        "clean": "rm -rf build && rm -rf dist",
+        "preversion": "",
+        "version": "",
+        "postversion": "git push && git push --tags"
+    },
+    "name": "@embrace-fr/pulse-it",
+    "version": "0.5.0",
+    "description": "The official Pulse-IT Javascript SDK. Contact info@embrace.fr for further information.",
+    "author": "Embrace",
+    "license": "LGPL-3.0-only",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bnb/metaverse.git"
+    },
+    "devDependencies": {
+        "@types/bindings": "^1.3.0",
+        "@types/dateformat": "^3.0.1",
+        "@types/jest": "^25.2.1",
+        "@types/node": "^12.12.37",
+        "@typescript-eslint/eslint-plugin": "^2.12.0",
+        "@typescript-eslint/parser": "^2.12.0",
+        "eslint": "^6.7.2",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jest": "^25.4.0",
+        "jest-cli": "^25.4.0",
+        "prettier": "^2.0.5",
+        "ts-jest": "^25.4.0",
+        "typescript": "^3.8.3"
+    }
+}

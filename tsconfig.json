@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "lib": ["esnext"],
+        "module": "commonjs",
+        "outDir": "./dist",
+        "rootDir": ".",
+        "allowSyntheticDefaultImports": true,
+        "target": "es2019",
+        "resolveJsonModule": true,
+        "types": ["node", "jest"],
+        "typeRoots": ["node_modules/@types"],
+        "sourceMap": true
+    },
+    "include": ["lib/**/*"]
+}
