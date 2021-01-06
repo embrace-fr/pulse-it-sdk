@@ -2,7 +2,7 @@
     "main": "dist/lib/pulse-it.js",
     "types": "dist/lib/pulse-it.d.ts",
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "dateformat": "^3.0.3"
     },
     "scripts": {
